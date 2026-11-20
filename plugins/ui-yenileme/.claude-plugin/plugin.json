@@ -1,6 +1,6 @@
 {
   "name": "ui-yenileme",
   "description": "Araştırmaya dayalı UI/UX yenilemesi: bugünkü ekranları inceler, otoritelerden (NN/g, GOV.UK, Baymard, WCAG 2.2, Apple HIG, Material 3) kural toplar, claude.ai Design tuvalinde yeni ekranları bugünküyle yan yana çizer ve davranış değiştiren kararları ayrı listeler.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": { "name": "mustafa-kara" }
 }

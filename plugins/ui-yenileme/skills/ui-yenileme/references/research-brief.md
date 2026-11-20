@@ -33,6 +33,10 @@ Do not write code. Do not include any personal data. Say which sources you could
 ## Platforma göre ek kaynaklar
 
 - **Mobil uygulama:** Apple HIG (tab bars, onboarding, sheets), Material 3 (navigation bar, badges, onboarding), Android onboarding rehberi.
+- **Herkese açık web sitesi ya da pazar yeri (masaüstü ve mobil):**
+  - kaynaklar: NN/g ("Mobile-First Is NOT Mobile-Only", homepage guidelines, F-shaped pattern, mega menus, filters vs facets), Baymard (homepage, ürün listesi, arama sonuçları, filtreleme), Material 3 window size classes ve canonical layouts (liste–detay, destek paneli, akış), WCAG 1.4.10 reflow ve 1.4.13 hover içeriği;
+  - aynı kategorideki 2–3 sitenin masaüstü düzeni: yalnız kalıp, kopya yok;
+  - brief'in 3. maddesine ekle: "what should the desktop layout gain over mobile for this page (side-by-side search and results, persistent filters, list–detail, denser comparison cards, section hierarchy)?".
 - **Web/admin paneli:** NN/g (data tables, filters, bulk actions, dashboards), GOV.UK (task list, check answers, confirmation pages), Baymard (form ve tablo kalıpları), WCAG 2.2 tablo ve klavye erişimi. Admin araçları için "moderation queue" ve "case management" örnekleri (Trust & Safety araçları yazıları).
 - **Ödeme/sepet:** Baymard checkout araştırmaları, PSD2/3DS akış yönergeleri.
 - **Rıza ve yasal:** ilgili yasa ve kurul kararları (KVKK, GDPR), "just-in-time consent" kalıbı. Hukuk onayı gerektiğini rapora yazdır.

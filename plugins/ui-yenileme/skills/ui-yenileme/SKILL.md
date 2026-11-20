@@ -18,7 +18,10 @@ Kullanıcıya giden her metin kullanıcının dilinde olsun, ara durum mesajlar�
 
 Konuşmadan şunları çıkar; yalnız gerçekten belirsiz olanı sor:
 - **Hangi ekranlar ya da akış?** Kullanıcı "yalnız kayıt, diğer alanlara dokunma" dediyse kapsam dışı ekranları çizme.
-- **Platform:** mobil (390×844 telefon çerçevesi) ya da web/admin (1440 genişlikte sayfa).
+- **Platform:** mobil (390×844 telefon çerçevesi), herkese açık web sitesi ya da web uygulaması, ya da admin paneli.
+  - Herkese açık web: hem masaüstü (1440, 1280'de de kontrol) hem mobil (390) çizilir; ikisi ayrı kompozisyondur.
+  - Admin: masaüstü öncelikli.
+  - Web işlerinde `references/web-desktop.md`'yi oku.
 - **Değişim düzeyi:** büyük yenileme mi, belirli bir sorun mu? Belirtilmemişse büyük yenileme varsay.
 
 ## 2. Bugünü topla (araştırmayla paralel)
@@ -62,6 +65,13 @@ Her bugünkü sorunu bir değişikliğe bağlayan kısa bir eşleme çıkar; ilk
 - **Duygusal anlar:** doğrulama sonrası kısa kutlama + yol haritası; sonda "başkaları seni böyle görecek" önizlemesi. Bunları seyrek tut.
 - **Koçluk:** fotoğraf ipuçları, ilk mesaj için başlangıç önerileri, boş durumlarda tek sonraki adım.
 - **Güvenlik:** şikayet ve engelleme en fazla iki dokunuş uzakta, kapatılabilir güvenlik ipucu.
+- **Masaüstü web için ayrı kompozisyon** (`references/web-desktop.md`):
+  - her bölüm için "geniş ekranda ne kazanıyoruz?" sorusunun cevabı;
+  - aramanın sonuçla ya da haritayla yan yana durması, sürekli görünen filtreler, liste–detay;
+  - karşılaştırma için yoğun kartlar;
+  - bölümler arasında hiyerarşi.
+
+  Mobil düzeni 1440'a yaymak masaüstü tasarımı değildir. Sadeleştirme dar ekranda kazanç, geniş ekranda boşluk ve sıradanlıktır.
 
 Önermeden önce her fikri kontrol et:
 - **Sunucuda karşılığı var mı?** Bir anahtar ya da ayar öneriyorsan API/modelde alanını ara. Yoksa çizme ya da açıkça "sunucuda ek gerekir" diye işaretle. Örnek: tasarımda çizilen bir "profilimde göster" anahtarının sunucuda alanı yoksa, uygulamaya geçerken çıkarmak gerekir.
@@ -81,6 +91,11 @@ Ayrıntılı mekanik `references/canvas-recipe.md`'de; tuvale başlamadan önce 
   - fotoğraf gerekiyorsa projedeki lisanslı deneme fotoğrafları (lisans dosyasını kontrol et), yoksa figür;
   - klavye açık ekranlarda gri "Klavye" bloğu;
   - sahte durum çubuğu yok.
+- **Web sayfası:**
+  - masaüstü ve mobil iki ayrı satır, ikisinde de "Bugün" solda;
+  - aynı örnek veri;
+  - footer dahil her bölüm çizilir, "değişmedi" yazılı boş şerit bırakılmaz;
+  - yayınlamadan önce `references/web-desktop.md` sonundaki kontrol listesinden geçir.
 - **Etkileşim:** seçimler, anahtarlar, alt sayfalar ve sekmeler state ile çalışsın; ekranlar arası `<a href="X.dc.html">` ile Play akışı kurulsun.
 - **Yazım düzeni:** her dosyayı yaz ve hemen yayınla. Kullanıcı istemedikçe tuvali geri okuyup "doğrulama" yapma.
 - **Erişilebilirlik çizimde de geçerli:** gerçek `<button>`/`<a>`/`<input>`, ikon düğmelerde `aria-label`, ≥44 pt hedef, kontrast ≥4.5:1, renk tek başına anlam taşımaz.
@@ -90,7 +105,7 @@ Ayrıntılı mekanik `references/canvas-recipe.md`'de; tuvale başlamadan önce 
 Tuval linkiyle birlikte şu yapıda kısa bir mesaj yaz:
 1. **Bir cümle:** ne hazırlandı, kod değişmedi, nasıl gezilir (Play).
 2. **Link.**
-3. **Bugüne göre büyük farklar:** bölüm başına 1–2 madde, somut.
+3. **Bugüne göre büyük farklar:** bölüm başına 1–2 madde, somut. Web işinde masaüstü için ayrıca "geniş ekranda ne kazandık" (2–3 madde).
 4. **Araştırmanın getirdikleri:** 1–3 madde, kaynak adlarıyla.
 5. **Senin kararını isteyenler (davranış değiştiriyor):** numaralı liste. Sıra değişikliği, varsayılan değer, kaldırılan/taşınan seçenek, sunucu eki gerektiren özellik, eşik değeri ("ilk 50 kayıt", "en fazla 3 deneme") gibi. Bunları görsel değişikliklerden ayırmak kullanıcının hızlı karar vermesini sağlar.
 6. **Çizilmeyenler** ve bir sonraki adım: onaylarsa uygulama planı.

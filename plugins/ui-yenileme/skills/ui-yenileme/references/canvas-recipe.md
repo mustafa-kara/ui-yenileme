@@ -46,6 +46,12 @@ magick golden.png -crop 390x844+360+16 +repage -quality 80 -strip assets/now-<ad
 - **Satır adımı 1184:** her satırın üstünde ≥223 px başlık alanı. Başlık notu `{"x":0,"y":<satırY-300>,"text":"1 · Ana sayfa (solda bugün, sağda yeni)","kind":"title1","maxW":2740}`.
 - Web sayfası çerçevesi: `w` 1440, `"expand": "fill"`, `h` = sayfanın 1440 genişlikteki yüksekliği. Çiftler alt alta durur: bugün üstte, yeni altta.
 - **Yükseklikte cömert ol.** Tuvali geri okuyup ölçmüyorsun, o yüzden yüksekliği bölümlerin toplamından tahmin et ve üstüne %20 ekle. Uzun çerçeve kesik çerçeveden iyidir; altı kesik bir sayfa kullanıcıya bozuk görünür. Telefon ekranında da içerik 844'ü aşıyorsa ya içeriği kısalt ya da "kaydırılmış" hâli ayrı bir çift olarak çiz.
+- Herkese açık web sayfasında iki satır kur:
+  - masaüstü (1440, bugün solda);
+  - mobil (390, `radius` 44, bugün solda).
+
+  Masaüstü kökü akışkan olduğu için 1280'de de kırılmamalı; gerekiyorsa 1280 genişlikte ikinci bir masaüstü çerçevesi ekle. Kurallar: `references/web-desktop.md`.
+- **Yükseklikte cömert ol.** Tuvali geri okuyup ölçmüyorsun, o yüzden yüksekliği bölümlerin toplamından tahmin et ve üstüne %20 ekle. Uzun çerçeve kesik çerçeveden iyidir; altı kesik bir sayfa kullanıcıya bozuk görünür. Telefon ekranında da içerik 844'ü aşıyorsa ya içeriği kısalt ya da "kaydırılmış" hâli ayrı bir çift olarak çiz.
 - **Bugünkü ekranın görüntüsü yoksa** (ör. admin paneli, çalıştırılamayan sunucu) bugünkü sayfayı koddan sadık biçimde yeniden çiz: alanlar, düğmeler, sıralar ve metinler kaynaktaki gibi. Çerçeve adına bunu yaz: `"Bugün · Sipariş detayı (koddan yeniden çizildi)"`. Kullanıcı neyin gerçek ekran görüntüsü, neyin yeniden çizim olduğunu bilmeli.
 
 ```json
