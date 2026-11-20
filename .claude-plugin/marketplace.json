@@ -1,0 +1,14 @@
+{
+  "name": "ui-yenileme",
+  "description": "Araştırmaya dayalı UI/UX yenileme skill'i (Türkçe).",
+  "owner": {
+    "name": "mustafa-kara"
+  },
+  "plugins": [
+    {
+      "name": "ui-yenileme",
+      "source": "./plugins/ui-yenileme",
+      "description": "Araştırmaya dayalı UI/UX yenilemesi: bugünkü ekranları inceler, otoritelerden kural toplar, claude.ai Design tuvalinde yeni ekranları bugünküyle yan yana çizer."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: hesap-silme-bildirim-ayarlari
+expected_outcome: |
+  Projenin mobil uygulamasındaki hesap silme ve bildirim ayarları ekranları için araştırmaya dayalı bir yenileme önerisi.
+  Bir Design tuvali oluşturulur; her yeni telefon ekranının solunda bugünkü ekran görüntüsü durur.
+  Tasarım marka token'larını ve bugünkü metinleri kullanır; yasal içerik ve bekleme süresi gibi kurallar korunur.
+  Kullanıcıya Türkçe, kısa bir özet ve davranış değiştiren kararların ayrı listesi verilir. Kod değiştirilmez.
