@@ -11,7 +11,7 @@ Kod yazmaz; uygulama, tasarım onaylandıktan sonra ayrı bir iştir. Skill metn
 
 ## Kurulum
 
-Bu depo özel (private). Kurmak için depoya erişimin olmalı ve git'in GitHub'a giriş yapabilmesi gerekir (ör. `gh auth login`).
+İki komut yeter; GitHub hesabı gerekmez:
 
 ```
 claude plugin marketplace add mustafa-kara/ui-yenileme
